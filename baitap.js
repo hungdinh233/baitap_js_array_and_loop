@@ -1,65 +1,26 @@
 // bài tập 1: in bảng 10 hàng 10 cột từ 1 đến 100 thỏa các điều kiện để bài
-function ex1(){
-var res = "";
-for (var i = 1; i <= 100; i += 10) {
-  for (var k = 0; k < 10; k++) {
-    res += k + i + "__";
-  }
-  res += "\n";
-}
-console.log(res);
-document.getElementById("result").innerHTML = res;
-}
-ex1();
-// bài tập 2: cho 1 mảng gồm các số tự nhiên, xuất ra số nào là số nguyên tố trong mảng
-
-ex2([2, 4, 5, 6, 8, 12, 15, 24, 23, 7]);
-
-function ex2(arr2) {
-  var SoNguyenTo = [];
-  for (var i = 0; i <= arr2.length; i++) {
-    if (arr2[i] > 1 && arr2[i] % 2 !== 0 && arr2[i] % 3 !== 0) {
-      // SoNguyenTo += arr2[i] + " ";
-      SoNguyenTo.push(arr2[i]);
+function ex1() {
+  var res = "";
+  for (var i = 1; i <= 100; i += 10) {
+    for (var k = 0; k < 10; k++) {
+      res += k + i + "__";
     }
-    if (arr2[i] === 2 || arr2[i] === 3) {
-      // SoNguyenTo += arr2[i] + " ";
-      SoNguyenTo.push(arr2[i]);
-    }
+    res += "\n";
   }
-  console.log("số nguyên tố trong mảng là: ", SoNguyenTo);
+  console.log(res);
+  document.getElementById("result").innerHTML = res;
 }
+// ex1();
+
 
 // bài tập 3: viết function nhập vào n tính S= (2+3+4+...+n)+ 2n
-countSum(199);
-function countSum(n) {
-  var sum = 0;
-  var finalSum;
-  for (var i = 2; i <= n; i++) {
-    sum += i;
-  }
-  finalSum = sum + 2 * n;
-  console.log(finalSum);
-}
+
 
 // bài tập 4: viết function nhận tham số n , tìm số lượng ước số của n
 
 ex4(180);
 
-function ex4(n) {
-  var countUocSo = 0;
-  var uocSo = [];
-  for (var i = 1; i <= n; i++) {
-    if (n % i === 0) {
-      countUocSo++;
-      uocSo.push(i);
-      // // // hoặc có thể viết như này thì sẽ xuất ra dạng str
-      // uocSo += i;
-    }
-  }
-  console.log("ước số của n là số: ", uocSo);
-  console.log("số lượng ước số của n là: ", countUocSo, "số");
-}
+
 
 /**bài tập 5: viết chương trình xuất ra số đảo ngược của số nguyên dương n đã nhập vào
  * vd: 1234 => 4321*/
@@ -261,4 +222,4 @@ function findAngle(a, b) {
   }
 }
 
-findAngle(9,55);
+findAngle(9, 55);
