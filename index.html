@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BÀI TẬP JS BUỔI 17</title>
     <style>
+      body {
+        background-color: black;
+      }
       img {
         width: 500px;
         height: 300px;
@@ -20,6 +23,26 @@
       }
       h1 {
         text-align: center;
+        color: #ffffff
+        ;
+      }
+      button {
+        transition: all 0.3s;
+      }
+      .btn__bt {
+        width: 120px;
+        height: 50px;
+        color: rgb(254, 249, 249) ;
+        font-weight: 700;
+        border-radius: 10px;
+        margin-right: 20px;
+        cursor: pointer;
+        background-color: black;
+        border: red solid 4px;
+      }
+      .footer button:hover {
+        background-color: lightgreen;
+        color: black;
       }
     </style>
   </head>
@@ -37,7 +60,19 @@
           alt=""
         />
       </a>
+      <div class="footer">
+   <a href="./ex1.html"><button class="btn__bt">BÀI TẬP 1</button></a>
+   <button class="btn__bt">BÀI TẬP 2</button>
+   <button class="btn__bt">BÀI TẬP 3</button>
+   <button class="btn__bt">BÀI TẬP 4</button>
+   <button class="btn__bt">BÀI TẬP 5</button>
+   <button class="btn__bt">BÀI TẬP 6</button>
+   <button class="btn__bt">BÀI TẬP 7</button>
+   <button class="btn__bt">BÀI TẬP 8</button>
+   <button class="btn__bt">BÀI TẬP 9</button>
+   <button class="btn__bt">BÀI TẬP 10</button>
    
+  </div>
       <script src="./baitap.js"></script>
     </div>
   </body>

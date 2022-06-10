@@ -1,13 +1,16 @@
 // bài tập 1: in bảng 10 hàng 10 cột từ 1 đến 100 thỏa các điều kiện để bài
+function ex1(){
 var res = "";
 for (var i = 1; i <= 100; i += 10) {
   for (var k = 0; k < 10; k++) {
-    res += k + i + "   ";
+    res += k + i + "__";
   }
   res += "\n";
 }
 console.log(res);
-
+document.getElementById("result").innerHTML = res;
+}
+ex1();
 // bài tập 2: cho 1 mảng gồm các số tự nhiên, xuất ra số nào là số nguyên tố trong mảng
 
 ex2([2, 4, 5, 6, 8, 12, 15, 24, 23, 7]);
