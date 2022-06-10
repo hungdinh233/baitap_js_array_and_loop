@@ -1,5 +1,8 @@
 function ex4() {
   var n = document.getElementById("input").value;
+  if (n ==""){
+    alert("Vui lòng nhập số!")
+  }
   var countUocSo = 0;
   var uocSo = [];
   for (var i = 1; i <= n; i++) {

@@ -18,7 +18,7 @@ function ex1() {
 
 // bài tập 4: viết function nhận tham số n , tìm số lượng ước số của n
 
-ex4(180);
+// ex4(180);
 
 
 

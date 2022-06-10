@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ex5</title>
+    <style>
+      body {
+        background-color: #892121;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+      .container {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      h1 {
+        text-align: center;
+        color: #ffffff;
+        font-size: 20px;
+      }
+
+      .btn__bt {
+        width: 120px;
+        height: 50px;
+        color: rgb(254, 249, 249);
+        font-weight: 700;
+        border-radius: 10px;
+        margin-right: 20px;
+        cursor: pointer;
+        background-color: black;
+        border: red solid 4px;
+        margin-top: 50px;
+      }
+      .footer {
+        width: 400px;
+        padding-left: 50px;
+      }
+      button {
+        transition: all 0.3s;
+      }
+      .footer button:hover {
+        background-color: lightgreen;
+        color: black;
+      }
+      .res__btn {
+        cursor: pointer;
+        width: 160px;
+        height: 50px;
+      }
+      #result {
+        display: block;
+        width: 200px;
+      }
+      .input {
+        width: 400px;
+        height: 70px;
+        font-size: 15px;
+        padding-left: 20px;
+      }
+      #add__array {
+        width: 200px;
+        height: 50px;
+        margin-bottom: 40px;
+        cursor: pointer;
+        background-color: lawngreen;
+        font-weight: bolder;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="footer">
+      <a href="ex1.html"><button class="btn__bt">BÀI TẬP 1</button></a>
+      <a href=""><button class="btn__bt">BÀI TẬP 2</button></a>
+      <a href=""><button class="btn__bt">BÀI TẬP 3</button></a>
+      <a href=""><button class="btn__bt">BÀI TẬP 4</button></a>
+      <a href=""><button class="btn__bt">BÀI TẬP 5</button></a>
+      <a href=""><button class="btn__bt">BÀI TẬP 6</button></a>
+      <a href=""><button class="btn__bt">BÀI TẬP 7</button></a>
+      <a href=""><button class="btn__bt">BÀI TẬP 8</button></a>
+      <a href=""><button class="btn__bt">BÀI TẬP 9</button></a>
+      <a href=""><button class="btn__bt">BÀI TẬP 10</button></a>
+      <a href="/index.html"><button class="btn__bt">QUAY LẠI HOME</button></a>
+    </div>
+    <div class="container">
+      <h1>
+        5. Viết chương trình tìm số đảo ngược của 1 số nguyên dương n nhập từ
+        bàn phím.Vd :1234 => 4321
+      </h1>
+      <br />
+
+      <input class="input" type="text" , placeholder="nhập vào n" id="input" />
+      <br />
+
+      <button class="res__btn" onclick="ex5()">BẤM ĐỂ XEM KẾT QUẢ</button>
+      <br />
+      <br />
+      <span> số đảo ngược của số n đã nhập là: </span>
+      <p id="result1"></p>
+    </div>
+
+    <script src="/bt5.js"></script>
+  </body>
+</html>

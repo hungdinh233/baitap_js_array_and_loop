@@ -1,6 +1,9 @@
 
 function countSum() {
 var n = document.getElementById("input").value;
+if( n== ""){
+  alert("Vui lòng nhập số!")
+}
   var sum = 0;
   var finalSum;
   for (var i = 2; i <= n; i++) {
