@@ -1,0 +1,2 @@
+link github bài tập : https://github.com/hungdinh233/js-array-and-loop-exercises
+link vercel: https://js-array-and-loop-exercises.vercel.app/

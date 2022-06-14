@@ -5,8 +5,8 @@ var array = [];
 function themVaoMang() {
   var nhapSo = document.getElementById("input").value;
   if (nhapSo == "") {
-    alert("nhập số vào bạn ơi!");
-    return;
+    return alert("nhập số vào bạn ơi!");
+   
   } else {
     array.push(nhapSo);
     
@@ -15,16 +15,19 @@ function themVaoMang() {
 }
 
 function ex2() {
-console.log("hello", array);
   var SoNguyenTo = [];
   for (var i = 0; i <= array.length; i++) {
     if (array[i] > 1 && array[i] % 2 !== 0 && array[i] % 3 !== 0) {
       SoNguyenTo.push(array[i]);
     //   console.log(SoNguyenTo);
     }
-    if (array[i] === 2 || array[i] === 3) {
-      SoNguyenTo.push(array[i]);
+    else if (i=== 2) {
+      SoNguyenTo.push(2);
     }
+    else if (i === 3) {
+      SoNguyenTo.push(3)
+    }
+  
   }
   console.log("số nguyên tố trong mảng là: ", SoNguyenTo);
   document.getElementById("result2").innerHTML = SoNguyenTo;
